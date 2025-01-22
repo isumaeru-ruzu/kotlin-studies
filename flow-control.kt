@@ -1,6 +1,6 @@
 fun main() {
-    var canSearchRoute = false
-    var routeType = "Avião" //Tipos de rotas: Andando; Carro; Trem; Metro;
+    var canSearchRoute = true
+    var routeType = "Carro" //Tipos de rotas: Andando; Carro; Trem; Metro;
 
     //if = Se
     //else = Se não
