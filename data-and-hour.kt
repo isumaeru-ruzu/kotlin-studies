@@ -2,6 +2,7 @@ import java.util.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.text.SimpleDateFormat;
 
 fun main(){
    /* 
@@ -22,4 +23,10 @@ fun main(){
 
     var todayAndHour = LocalDateTime.from(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").parse("03/03/2025 19:00"))
     println(todayAndHour)
+
+    //Outra forma de transformar um tipo String em Date
+    val simpleDateFormat = SimpleDateFormat("dd/MM/yyyy") //Tem que consutar na internet o padrão do Simple Date.
+    val todayDate = simpleDateFormat.parse("03/03/2025")
+    println()
+    println(todayDate)
 }
