@@ -29,4 +29,12 @@ fun main(){
     val todayDate = simpleDateFormat.parse("03/03/2025")
     println()
     println(todayDate)
+
+
+    //Manipulando o tipo Date
+    today = today.plusDays(4)
+    println("Adicionando mais 4 dias ${today}")
+
+    var tomorrow = LocalDate.from(DateTimeFormatter.ofPattern("dd/MM/yyyy").parse("04/03/2025"))
+    println("O dia da variável \"Today\" é depois do dia da variável \"Tomorrow\": ${today.isAfter(tomorrow)}")
 }
